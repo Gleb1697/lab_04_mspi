@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Shot {
+
     /*
     public static void newShot() {
         Scanner keyboard = new Scanner(System.in);

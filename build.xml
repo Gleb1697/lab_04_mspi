@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Lab03mspi" default="run">
+<project name="Lab04mspi" default="run">
     <!-- properties -->
     <property file="build.properties"/>
     <!-- targets -->
