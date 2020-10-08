@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Shot {
+    static Square square;
+    static PointsInfo pointsInfo;
 
     /*
     public static void newShot() {
@@ -34,6 +36,7 @@ public class Shot {
                     break;
                 case 3:
                     dot.setRRadius(Double.parseDouble(numberString));
+                    square.setRadius(dot.getRRadius());
                     break;
                 default:
                     break;
@@ -43,5 +46,6 @@ public class Shot {
         dot.setGotHit(ShootingCheck.checkDot(dot.getXCoordinate(), dot.getYCoordinate(), dot.getRRadius()));
         System.out.println(dot.getGotHit() ? "Попадание!" : "Промах!");
         History.addDot(dot);
+        pointsInfo.addPoint(dot.getGotHit());
     }
 }

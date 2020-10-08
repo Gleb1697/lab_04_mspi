@@ -1,6 +1,6 @@
 public class Square implements SquareMBean {
 
-    private double radius = 10;
+    private double radius;
 
     @Override
     public double getRadius() {

@@ -12,9 +12,11 @@ public class SimpleAgent
         ObjectName helloName = null;
 
         PointsInfo pointsInfoBean = new PointsInfo();
+        Shot.pointsInfo = pointsInfoBean;
         ObjectName pointsInfoName = null;
 
         Square squareBean = new Square();
+        Shot.square = squareBean;
         ObjectName squareName = null;
  
         try {
