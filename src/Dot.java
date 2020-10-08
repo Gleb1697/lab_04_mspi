@@ -32,7 +32,7 @@ public class Dot {
         this.gotHit = gotHit;
     }
 
-    public String getGotHit() {
-        return (gotHit ? "Попадание!" : "Промах!");
+    public boolean getGotHit() {
+        return gotHit;
     }
 }

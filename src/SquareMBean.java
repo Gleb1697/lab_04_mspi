@@ -1,5 +1,5 @@
 public interface SquareMBean {
-    double getAreaSquare();
-    double getRadius();
-    void setRadius(double radius);
+    public double getAreaSquare();
+    public double getRadius();
+    public void setRadius(double radius);
 }

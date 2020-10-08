@@ -17,7 +17,7 @@ public class History {
                 //System.out.printf("%5.2f\t", dot.getYCoordinate());
                 //System.out.printf("%5.2f\t", dot.getRRadius());
                 System.out.printf("X: %.3f, Y: %.3f, R: %.3f Итог: ", dot.getXCoordinate(), dot.getYCoordinate(), dot.getRRadius());
-                System.out.println(dot.getGotHit());
+                System.out.println(dot.getGotHit() ? "Попадание!" : "Промах!");
             }
         } else if (dots.isEmpty()) {
             System.out.println("Выстрелов еще не было");

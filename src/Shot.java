@@ -41,7 +41,7 @@ public class Shot {
         }
         System.out.println("Стреляем!");
         dot.setGotHit(ShootingCheck.checkDot(dot.getXCoordinate(), dot.getYCoordinate(), dot.getRRadius()));
-        System.out.println(dot.getGotHit());
+        System.out.println(dot.getGotHit() ? "Попадание!" : "Промах!");
         History.addDot(dot);
     }
 }

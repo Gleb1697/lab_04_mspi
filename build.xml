@@ -59,6 +59,6 @@
         </exec>
     </target>
     <target name="run" depends="compile">
-        <java classname="${ant.project.name}" classpath="${classesdir}"/>
+        <java fork="yes" classname="${ant.project.name}" classpath="${classesdir}"/>
     </target>
 </project>
