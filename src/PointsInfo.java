@@ -1,3 +1,5 @@
+package lab4.beans;
+
 import javax.management.Notification;
 import javax.management.NotificationBroadcasterSupport;
 
@@ -22,7 +24,7 @@ public class PointsInfo extends NotificationBroadcasterSupport implements Points
         if (gotHit) {
             hitPointsCount += 1;
         }
-        if (pointsCount % 2 == 0) {
+        if (pointsCount % 10 == 0) {
             Notification n = new Notification(
                     "All points is divisible by 2",
                     this,

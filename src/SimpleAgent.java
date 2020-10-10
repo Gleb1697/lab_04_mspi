@@ -1,5 +1,9 @@
+package lab4.beans;
+
 import javax.management.*;
 import java.lang.management.*;
+
+import lab4.comands.*;
  
 public class SimpleAgent 
 {
@@ -7,9 +11,6 @@ public class SimpleAgent
  
     public SimpleAgent() {
         mbs = ManagementFactory.getPlatformMBeanServer();
- 
-        Hello helloBean = new Hello();
-        ObjectName helloName = null;
 
         PointsInfo pointsInfoBean = new PointsInfo();
         Shot.pointsInfo = pointsInfoBean;
@@ -20,9 +21,6 @@ public class SimpleAgent
         ObjectName squareName = null;
  
         try {
-            helloName = new ObjectName("SimpleAgent:name=hellothere");
-            mbs.registerMBean(helloBean, helloName);
-
             pointsInfoName = new ObjectName("SimpleAgent:name=pointsInfo");
             mbs.registerMBean(pointsInfoBean, pointsInfoName);
 

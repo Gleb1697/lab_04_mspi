@@ -1,3 +1,5 @@
+package lab4.comands.utils;
+
 public class Dot {
     private double xCoordinate;
     private double yCoordinate;

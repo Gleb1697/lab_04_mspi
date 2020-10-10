@@ -1,8 +1,13 @@
+package lab4.comands;
+
 import java.util.Scanner;
 
+import lab4.beans.*;
+import lab4.comands.utils.*;
+
 public class Shot {
-    static Square square;
-    static PointsInfo pointsInfo;
+    public static Square square;
+    public static PointsInfo pointsInfo;
 
     /*
     public static void newShot() {

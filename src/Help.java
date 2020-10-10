@@ -1,3 +1,5 @@
+package lab4.comands;
+
 public class Help {
     public static void printHelp() {
         System.out.println("Команда\t\t\tНазначение");

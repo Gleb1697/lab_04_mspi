@@ -1,3 +1,5 @@
+package lab4.comands.utils;
+
 public class ShootingCheck {
     public static boolean checkDot(double x, double y, double r) {
         boolean squareCheck, triangleCheck, circleCheck;

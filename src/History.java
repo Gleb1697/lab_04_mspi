@@ -1,6 +1,10 @@
+package lab4.comands;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.io.*;
+
+import lab4.comands.utils.*;
 
 public class History {
     private static ArrayList<Dot> dots = new ArrayList<>();

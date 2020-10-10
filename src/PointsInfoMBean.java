@@ -1,3 +1,5 @@
+package lab4.beans;
+
 import javax.management.NotificationBroadcaster;
 
 public interface PointsInfoMBean extends NotificationBroadcaster {

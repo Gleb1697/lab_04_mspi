@@ -1,5 +1,10 @@
+package lab4;
+
 import java.util.Scanner;
 import java.io.*;
+
+import lab4.beans.*;
+import lab4.comands.*;
 
 public class WorkWithClient {
     private final Scanner keyboard;

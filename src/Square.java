@@ -1,3 +1,5 @@
+package lab4.beans;
+
 public class Square implements SquareMBean {
 
     private double radius;
@@ -14,9 +16,9 @@ public class Square implements SquareMBean {
 
     @Override
     public double getAreaSquare() {
-        double circleSquare = Math.PI * Math.pow(radius, 2) / 16;
+        double circleSquare = Math.PI * Math.pow(radius, 2) / 4;
         double rectangleSquare = radius * radius / 2;
-        double triangleSquare = Math.pow(radius, 2) / 8;
+        double triangleSquare = Math.pow(radius, 2) / 4;
         return circleSquare + rectangleSquare + triangleSquare;
     }
 }
